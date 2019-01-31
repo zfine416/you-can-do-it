@@ -12,3 +12,158 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.dog {
+  width: 50%;
+}
+
+.dog>img {
+  width: 100%;
+  height: 290px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.loading>h2 {
+  margin-bottom: 28px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-group-toggle>label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-center a {
+  color: blue;
+  width: 100%;
+  transition: all .7s;
+}
+
+.active {
+  background: blue !important;
+  color: #FFF !important;
+}
+
+.flex-center a:hover {
+  background: darkblue;
+  color: #FFF;
+}
+
+.btn-group-vertical {
+  width: 100%;
+}
+
+.row>div {
+  padding: 0px 20px 0px 20px;
+}
+
+.col-3 {
+  min-width: 180px;
+}
+
+.dog-list {
+  width: 75%;
+}
+
+@media only screen and (max-width: 955px) {
+  .dog>img {
+    height: 220px;
+  }
+}
+
+@media only screen and (max-width: 705px) {
+  .dog>img {
+    height: 200px;
+  }
+
+  .space-evenly {
+    width: calc(100% - 198px) !important;
+  }
+}
+
+@media only screen and (max-width: 676px) {
+  .dog>img {
+    height: 160px;
+  }
+}
+
+@media only screen and (max-width: 566px) {
+  .dog {
+    width: 100%;
+  }
+
+  .dog>img {
+    height: 260px;
+  }
+}
+
+@media only screen and (max-width: 506px) {
+  .dog>img {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .dog>img {
+    height: 180px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .dog>img {
+    height: 120px;
+  }
+}
